@@ -1,5 +1,6 @@
-import ItemsList from "./ItemsList"
+// import ItemsList from "./ItemsList"
 import { useState, useEffect } from "react"
+import Table from './Table';
 
 function App() {
   const API_URL = "https://jsonplaceholder.typicode.com"
@@ -36,9 +37,10 @@ function App() {
       <button type="button" onClick={()=>setEndpoint("comments")}>
         comments
       </button>
-      <ItemsList 
+      {/* <ItemsList 
         items={items}
-      />
+      /> */}
+      <Table items={items} />
     </>
   )
 }
